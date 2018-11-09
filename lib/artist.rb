@@ -21,11 +21,11 @@ class Artist
     @@all
   end
 
-  def find(name)
+  def self.find(name)
     @@all.find{|artist| artist if artist.name == name}
   end
 
-  def create(name)
+  def self.create(name)
     Artist.new(name)
   end
 
