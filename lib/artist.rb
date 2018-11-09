@@ -30,8 +30,8 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if find_by_name(name) == nil then create_by_name(name)
-    else find_by_name(name)
+    if self.find_by_name(name) == nil then self.create_by_name(name)
+    else self.find_by_name(name)
     end
   end
 
