@@ -17,7 +17,7 @@ class Song
 #    binding.pry
     new_song = self.new(song)
     new_song.artist_name = artist
-    new_song.artist_name.add_song(new_song)
+
     new_song
   end
 
